@@ -1,0 +1,979 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2015-01-11T10:16:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/44416697",
+      "properties": {
+        "@id": "way/44416697",
+        "amenity": "cafe",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7642035,
+              -32.1115941
+            ],
+            [
+              115.7643752,
+              -32.1115504
+            ],
+            [
+              115.7643246,
+              -32.111425
+            ],
+            [
+              115.7641615,
+              -32.1114659
+            ],
+            [
+              115.7642035,
+              -32.1115941
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/45602887",
+      "properties": {
+        "@id": "way/45602887",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "The Merchant Tea and Coffee Co."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7476288,
+              -32.0558191
+            ],
+            [
+              115.7473782,
+              -32.0559908
+            ],
+            [
+              115.7475403,
+              -32.0560757
+            ],
+            [
+              115.7476959,
+              -32.0558555
+            ],
+            [
+              115.7476288,
+              -32.0558191
+            ]
+          ]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "id": "way/50335043",
+      "properties": {
+        "@id": "way/50335043",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "South Beach Cafe"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7523684,
+              -32.0760726
+            ],
+            [
+              115.7523791,
+              -32.0761738
+            ],
+            [
+              115.7524864,
+              -32.0761658
+            ],
+            [
+              115.7524743,
+              -32.0760635
+            ],
+            [
+              115.7523684,
+              -32.0760726
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/50694845",
+      "properties": {
+        "@id": "way/50694845",
+        "addr:housenumber": "231",
+        "addr:street": "South Terrace",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Aubergine Cafe",
+        "opening_hours": "Mo-Fr 07:00-16:00; Sa-Su 07:00-17:00",
+        "phone": "(08) 9335 2115"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7522346,
+              -32.0677847
+            ],
+            [
+              115.7522494,
+              -32.0679298
+            ],
+            [
+              115.7524481,
+              -32.0679145
+            ],
+            [
+              115.7524345,
+              -32.0677708
+            ],
+            [
+              115.7523205,
+              -32.0677781
+            ],
+            [
+              115.7522346,
+              -32.0677847
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/51718906",
+      "properties": {
+        "@id": "way/51718906",
+        "amenity": "cafe",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7479222,
+              -32.0554371
+            ],
+            [
+              115.7479002,
+              -32.0554688
+            ],
+            [
+              115.7479221,
+              -32.0554797
+            ],
+            [
+              115.7479441,
+              -32.055448
+            ],
+            [
+              115.7479222,
+              -32.0554371
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/56588942",
+      "properties": {
+        "@id": "way/56588942",
+        "amenity": "cafe",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7719335,
+              -32.0020158
+            ],
+            [
+              115.7719618,
+              -32.0020383
+            ],
+            [
+              115.7720029,
+              -32.0020414
+            ],
+            [
+              115.7720303,
+              -32.0020158
+            ],
+            [
+              115.7720285,
+              -32.0019849
+            ],
+            [
+              115.772002,
+              -32.0019647
+            ],
+            [
+              115.7719618,
+              -32.0019647
+            ],
+            [
+              115.7719381,
+              -32.0019856
+            ],
+            [
+              115.7719335,
+              -32.0020158
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/56652394",
+      "properties": {
+        "@id": "way/56652394",
+        "amenity": "cafe",
+        "building": "yes",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7625724,
+              -32.0291311
+            ],
+            [
+              115.7625263,
+              -32.0290702
+            ],
+            [
+              115.7624966,
+              -32.0290308
+            ],
+            [
+              115.7622949,
+              -32.0291404
+            ],
+            [
+              115.762384,
+              -32.0292583
+            ],
+            [
+              115.7625857,
+              -32.0291487
+            ],
+            [
+              115.7625724,
+              -32.0291311
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/57929262",
+      "properties": {
+        "@id": "way/57929262",
+        "amenity": "cafe",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7814802,
+              -32.0692044
+            ],
+            [
+              115.7814815,
+              -32.0692715
+            ],
+            [
+              115.7817564,
+              -32.0692692
+            ],
+            [
+              115.7817564,
+              -32.0692033
+            ],
+            [
+              115.7814802,
+              -32.0692044
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/121790187",
+      "properties": {
+        "@id": "way/121790187",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Jessica's Kitchen"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.761756,
+              -32.0732262
+            ],
+            [
+              115.7618768,
+              -32.0732252
+            ],
+            [
+              115.7618763,
+              -32.0731787
+            ],
+            [
+              115.7619326,
+              -32.0731782
+            ],
+            [
+              115.761932,
+              -32.0731256
+            ],
+            [
+              115.7617548,
+              -32.0731271
+            ],
+            [
+              115.761756,
+              -32.0732262
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/140484887",
+      "properties": {
+        "@id": "way/140484887",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Wild Poppy"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7515805,
+              -32.0594735
+            ],
+            [
+              115.7515673,
+              -32.0595107
+            ],
+            [
+              115.7518028,
+              -32.0596098
+            ],
+            [
+              115.7518745,
+              -32.0594747
+            ],
+            [
+              115.7518233,
+              -32.0594549
+            ],
+            [
+              115.7518745,
+              -32.0594413
+            ],
+            [
+              115.751854,
+              -32.0593991
+            ],
+            [
+              115.7515805,
+              -32.0594735
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/148173957",
+      "properties": {
+        "@id": "way/148173957",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Fidel's"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7481043,
+              -32.0564268
+            ],
+            [
+              115.7479836,
+              -32.0563623
+            ],
+            [
+              115.7478681,
+              -32.0564435
+            ],
+            [
+              115.7479673,
+              -32.0565262
+            ],
+            [
+              115.7481043,
+              -32.0564268
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/250737873",
+      "properties": {
+        "@id": "way/250737873",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "The Attic"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7460469,
+              -32.0552207
+            ],
+            [
+              115.7460932,
+              -32.0553272
+            ],
+            [
+              115.7462649,
+              -32.0552736
+            ],
+            [
+              115.7462185,
+              -32.055167
+            ],
+            [
+              115.7460469,
+              -32.0552207
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/256917795",
+      "properties": {
+        "@id": "way/256917795",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Roasting Warehouse"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7526152,
+              -32.0678004
+            ],
+            [
+              115.7526281,
+              -32.0680261
+            ],
+            [
+              115.7529869,
+              -32.068017
+            ],
+            [
+              115.7529805,
+              -32.0677931
+            ],
+            [
+              115.7526152,
+              -32.0678004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/310200645",
+      "properties": {
+        "@id": "node/310200645",
+        "amenity": "cafe",
+        "name": "Walter's River Cafe",
+        "opening_hours": "08:00-17:00",
+        "payment:credit_cards": "no",
+        "website": "http://www.waltersrivercafe.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7876661,
+          -32.0122699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/342658341",
+      "properties": {
+        "@id": "node/342658341",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7456628,
+          -32.034888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/482264847",
+      "properties": {
+        "@id": "node/482264847",
+        "amenity": "cafe",
+        "name": "Tasty Express"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7526769,
+          -32.0676368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/567352850",
+      "properties": {
+        "@id": "node/567352850",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7522413,
+          -32.0597768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/600753398",
+      "properties": {
+        "@id": "node/600753398",
+        "amenity": "cafe",
+        "name": "Chalkies"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7419659,
+          -32.0559909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/600753458",
+      "properties": {
+        "@id": "node/600753458",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7422378,
+          -32.0533884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/600753492",
+      "properties": {
+        "@id": "node/600753492",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7427192,
+          -32.0530031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/600826931",
+      "properties": {
+        "@id": "node/600826931",
+        "amenity": "cafe",
+        "name": "Dôme Fremantle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.747406,
+          -32.0557512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/662689900",
+      "properties": {
+        "@id": "node/662689900",
+        "amenity": "cafe",
+        "name": "Gino's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7470977,
+          -32.0556142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/728274164",
+      "properties": {
+        "@id": "node/728274164",
+        "amenity": "cafe",
+        "name": "Coogee Beach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7638621,
+          -32.1112865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/922234695",
+      "properties": {
+        "@id": "node/922234695",
+        "amenity": "cafe",
+        "name": "The Crowded House",
+        "website": "http://www.thecrowdedhouse.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.756175,
+          -32.0740444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/922253855",
+      "properties": {
+        "@id": "node/922253855",
+        "amenity": "cafe",
+        "name": "Douro Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7585269,
+          -32.0738809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/929147907",
+      "properties": {
+        "@id": "node/929147907",
+        "addr:housenumber": "19A",
+        "addr:street": "High Street",
+        "amenity": "cafe",
+        "name": "Blink Coffee",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.742898,
+          -32.0556566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1029226779",
+      "properties": {
+        "@id": "node/1029226779",
+        "amenity": "cafe",
+        "name": "La Tropicana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7496248,
+          -32.0536716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1112796032",
+      "properties": {
+        "@id": "node/1112796032",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7541981,
+          -32.0476404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1554231803",
+      "properties": {
+        "@id": "node/1554231803",
+        "amenity": "cafe",
+        "name": "Panache"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7459695,
+          -32.0573732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1674242380",
+      "properties": {
+        "@id": "node/1674242380",
+        "amenity": "cafe",
+        "name": "Beach Street Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7568109,
+          -32.0417629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2374495628",
+      "properties": {
+        "@id": "node/2374495628",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Moore and Moore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7447911,
+          -32.0563386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2535026143",
+      "properties": {
+        "@id": "node/2535026143",
+        "amenity": "cafe",
+        "name": "cookie dough",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7616484,
+          -32.0439922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2569237535",
+      "properties": {
+        "@id": "node/2569237535",
+        "amenity": "cafe",
+        "name": "Hush"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7464485,
+          -32.0541902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2583203048",
+      "properties": {
+        "@id": "node/2583203048",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Toscanini's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7761683,
+          -32.0376085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2583205944",
+      "properties": {
+        "@id": "node/2583205944",
+        "amenity": "cafe",
+        "name": "Zephyr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7624065,
+          -32.0291395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2831401318",
+      "properties": {
+        "@id": "node/2831401318",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7683402,
+          -32.0492536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2891142277",
+      "properties": {
+        "@id": "node/2891142277",
+        "amenity": "cafe",
+        "contact:website": "http://www.domecoffees.com.au/find-a-cafe-wa-applecross.html",
+        "name": "Dôme",
+        "opening_hours": "Mo-Tu ,Su 7:00-19:00; We-Sa 7:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8350287,
+          -32.0212855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3136043900",
+      "properties": {
+        "@id": "node/3136043900",
+        "amenity": "cafe",
+        "cuisine": "Cafe_food",
+        "name": "Uber Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7948993,
+          -32.0276943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3144618369",
+      "properties": {
+        "@id": "node/3144618369",
+        "amenity": "cafe",
+        "cuisine": "japanese",
+        "name": "Gohan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7478325,
+          -32.0556999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3144618370",
+      "properties": {
+        "@id": "node/3144618370",
+        "amenity": "cafe",
+        "name": "Grumpy Sailor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7484368,
+          -32.0553258
+        ]
+      }
+    }
+  ]
+}

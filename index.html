@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Freo caff&eacute; map</title>
+
+	<link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+	<style>
+	html,body { height:100%; margin:0; padding:0; border:0;
+		font-family:Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif }
+	p { margin:0 }
+	p, ol { line-height:1.2em }
+	a { color:#007095!important }
+	#map { height:100%; width:100% }
+	#box { position:fixed; bottom:1em; left:1em; background-color:white; width:25%; border:2px solid #d85916;
+		padding:3px }
+	#box img { float:right }
+	h1, h2 { margin:0 0 0.2em 0; padding:0; line-height:1em }
+	#show-help { cursor:help; color:blue; text-decoration:underline }
+	.button { display:block; margin:auto }
+	/*#note { display:block; margin:auto; padding:4px; border:2px solid #ccc; background-color:#efefef; width:auto; font-size:1.5em }*/
+	dfn { cursor:help; font-style:normal }
+	textarea { width:90%; display:block; margin:auto }
+	</style>
+</head>
+<body>
+
+	<div id="map"></div>
+
+	<div id="box">
+		<h1>Freo <dfn title="Two &lsquo;f&rsquo;s because we're more Italian than we are French&hellip;">caff&eacute;</dfn> map</h1>
+		<p>
+			This is a map of the caff&eacute;s in Fremantle, Western Australia,
+			built on <a href="http://osm.org">OpenStreetMap</a> data.
+		</p>
+		<p>
+			<strong>
+				If there's anything missing, please
+				<a id="show-help" title="Click to display instructions">help us fix it</a>.
+			</strong>
+		</p>
+		<div id="help">
+			<hr />
+			<h2>How to help:</h2>
+			<ol>
+				<li>
+					For a caff&eacute; already present on the map, open its popup and click the 'Add note' link;
+				</li>
+				<li>
+					for others, zoom in on the right area of the map, and then click the button below
+					(you'll be able to adjust the precise positioning on the page that opens).
+				</li>
+			</ol>
+			
+			<p><a id="note" class="note button" target="_blank">Add a note</a></p>
+		</div>
+	</div>
+	
+	<div id="popup" title="Add a note to OSM">
+		<p>For all notes, please copy and paste the list below and add information about any missing items:</p>
+		<textarea rows="9">Name:
+Street address:
+Opening hours:
+Phone number:
+Website:
+Email address:
+Brand (if part of a chain):
+Wifi availablility:
+Wheelchair accessibility:</textarea>
+		<p><a href="" class="button" target="_blank">Continue</a></p>
+	</div>
+
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="opening_hours.js"></script>
+	<script>
+
+	// Set up the map.
+	var attrib = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,'
+		+ ' <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>';
+	var map = L.map('map').setView([-32.054, 115.7452], 14);
+	map.on('move', function() {
+		var href = "http://www.openstreetmap.org/note/new#map="+map.getZoom()+"/"+map.getCenter().lat+"/"+map.getCenter().lng+"&layers=N";
+		$("#note").attr("href", href);
+	});
+	map.zoomIn();
+	var tileUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+	//var tileUrl = 'http://a.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png';
+	//var tileUrl = 'http://a.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png';
+	//var tileUrl = 'http://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+	var layer = L.tileLayer(tileUrl, { attribution:attrib, maxZoom:18 });
+	map.addLayer(layer);
+
+	// Add all the cafes.
+	$.getJSON("cafes.geojson", function(data) {
+		var geojson = L.geoJson(data, {
+			onEachFeature: function (feature, layer) {
+				// Check if feature is a polygon
+				if (feature.geometry.type === 'Polygon') {
+					// Don't stroke and do opaque fill
+					layer.setStyle({
+						'weight': 0,
+						'fillOpacity': 0
+					});
+					// Get bounds of polygon
+					var bounds = layer.getBounds();
+					// Get center of bounds
+					var center = bounds.getCenter();
+					// Use center to put marker on map
+				} else if (feature.geometry.type === 'Point') {
+					var center = layer.getLatLng();
+				}
+				var tags = feature.properties;
+				var name = (tags['name'] ? tags['name'] : '[Name unknown]');
+				var marker = L.marker(center, {
+					title: name,
+					riseOnHover: true,
+				}).addTo(map);
+				if (tags['website']) {
+					var name = '<a href="' + tags['website'] + '">'+tags['name']+'</a>';
+				} else {
+					//var name = tags[name'];
+				}
+
+				// Opening hours.
+				var hours = '';
+				if (tags['opening_hours']) {
+					try {
+						var oh = new opening_hours(tags['opening_hours']);
+						hours += 'Opening hours: '+tags['opening_hours'];
+						hours += ' (currently '+(oh.getState() ? 'open' : 'closed')+')';
+					} catch (ex) {
+						console.error("Error at "+center+" -- "+ex+" -- "+tags['opening_hours']);
+					}
+				}
+
+				// Address.
+				var addr = '';
+				if (tags['addr:housenumber']) addr += tags['addr:housenumber'];
+				if (tags['addr:street']) addr += ' '+tags['addr:street'];
+				if (addr != '') addr = '<br />'+addr;
+
+				// Phone number.
+				var phone = tags['phone'] ? '<br />'+tags['phone'] : '';
+
+				// Put it all together in the popup, and add it to the list.
+				map.get
+				marker.bindPopup("<strong>"+name+"</strong>" + phone + hours + addr
+					+ "<br /><em><a class='note'"
+					+ "  href='http://www.openstreetmap.org/note/new#map=19/"+center.lat+"/"+center.lng+"&layers=N'>"
+					+ "Add a note about this caff&eacute;"
+					+ "</a></em>"
+				);
+				$("#list").append("<li>"+name+"</li>");
+			}
+		});
+	});
+
+	// Show and hide help text.
+	$("#show-help").on('click', function() {
+		$("#help").slideToggle();
+	}).click();
+
+	// Show dialog when adding any note.
+	$(".button").button();
+	$(document).on("click", ".note", function(e) {
+		e.preventDefault();
+		$("#popup").dialog();
+		$("#popup a.button").attr("href", $(this).attr("href"));
+		$("#popup textarea").select();
+	});
+	$("#popup").hide();
+	$("#popup textarea").on("click", function(){
+		$(this).select();
+	});
+
+	</script>
+ </body>
+ </html>
+ 
