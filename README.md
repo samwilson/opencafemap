@@ -1,7 +1,7 @@
-OpenCafeMap
+OpenCaféMap
 ===========
 
-This is a map of cafes.
+This is a map of cafés.
 
 ## Overpass Turbo query
 
