@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2015-01-11T10:16:02Z",
+  "timestamp": "2015-01-15T08:03:02Z",
   "features": [
     {
       "type": "Feature",
@@ -77,7 +77,44 @@
         ]
       }
     },
-
+    {
+      "type": "Feature",
+      "id": "way/48785251",
+      "properties": {
+        "@id": "way/48785251",
+        "amenity": "cafe",
+        "building": "yes",
+        "opening_hours": "7:30-?",
+        "source": "nearmap"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.8350199,
+              -32.0109334
+            ],
+            [
+              115.8347915,
+              -32.0110418
+            ],
+            [
+              115.8348281,
+              -32.0110974
+            ],
+            [
+              115.8350566,
+              -32.0109892
+            ],
+            [
+              115.8350199,
+              -32.0109334
+            ]
+          ]
+        ]
+      }
+    },
     {
       "type": "Feature",
       "id": "way/50335043",
@@ -536,6 +573,56 @@
     },
     {
       "type": "Feature",
+      "id": "way/321448865",
+      "properties": {
+        "@id": "way/321448865",
+        "addr:housenumber": "16",
+        "addr:street": "Minilya Avenue",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Lumos",
+        "phone": "08 9335 5332",
+        "smoking": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7772282,
+              -32.0600303
+            ],
+            [
+              115.7772315,
+              -32.0601811
+            ],
+            [
+              115.7775261,
+              -32.0601764
+            ],
+            [
+              115.7775243,
+              -32.0600936
+            ],
+            [
+              115.7774814,
+              -32.0600943
+            ],
+            [
+              115.7774799,
+              -32.0600263
+            ],
+            [
+              115.7772282,
+              -32.0600303
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/310200645",
       "properties": {
         "@id": "node/310200645",
@@ -972,6 +1059,21 @@
         "coordinates": [
           115.7484368,
           -32.0553258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3283370249",
+      "properties": {
+        "@id": "node/3283370249",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7663492,
+          -32.0531934
         ]
       }
     }
