@@ -17,7 +17,7 @@
 	#box img { float:right }
 	h1, h2 { margin:0 0 0.2em 0; padding:0; line-height:1em }
 	#show-help { cursor:help; color:blue; text-decoration:underline }
-	.button { display:block; margin:auto }
+	.button { display:block; margin:0.7em auto; border-color:#007095; width:66% }
 	/*#note { display:block; margin:auto; padding:4px; border:2px solid #ccc; background-color:#efefef; width:auto; font-size:1.5em }*/
 	dfn { cursor:help; font-style:normal }
 	textarea { width:90%; display:block; margin:auto }
@@ -29,7 +29,7 @@
 
 	<div id="box">
 		<h1>Freo caf&eacute; map</h1>
-		<p>
+		<p id="intro">
 			This is a map of the caf&eacute;s in Fremantle, Western Australia,
 			built on <a href="http://osm.org">OpenStreetMap</a> data.
 		</p>
@@ -52,7 +52,7 @@
 				</li>
 			</ol>
 			
-			<p><a id="note" class="note button" target="_blank">Add a note</a></p>
+			<p><a id="note" class="note button success" target="_blank">Add a note</a></p>
 		</div>
 	</div>
 	
@@ -100,6 +100,8 @@ Wheelchair accessibility: yes/no</textarea>
 
 	// Add all the cafes.
 	$.getJSON("cafes.geojson", function(data) {
+		var date = new Date(data.timestamp);
+		$("#intro").after("<p><small>Last updated "+date.toDateString()+"</small></p>");
 		var geojson = L.geoJson(data, {
 			onEachFeature: function (feature, layer) {
 				// Check if feature is a polygon
@@ -118,6 +120,7 @@ Wheelchair accessibility: yes/no</textarea>
 					var center = layer.getLatLng();
 				}
 				var tags = feature.properties;
+				console.log(tags);
 				var name = (tags['name'] ? tags['name'] : '[Name unknown]');
 				var marker = L.marker(center, {
 					title: name,
@@ -143,7 +146,8 @@ Wheelchair accessibility: yes/no</textarea>
 
 				// Address.
 				var addr = '';
-				if (tags['addr:housenumber']) addr += tags['addr:housenumber'];
+				if (tags['addr:unit']) addr += 'Unit '+tags['addr:unit'];
+				if (tags['addr:housenumber']) addr += ' '+tags['addr:housenumber'];
 				if (tags['addr:street']) addr += ' '+tags['addr:street'];
 				if (addr != '') addr = '<br />'+addr;
 
@@ -172,7 +176,7 @@ Wheelchair accessibility: yes/no</textarea>
 	$(".button").button();
 	$(document).on("click", ".note", function(e) {
 		e.preventDefault();
-		$("#popup").dialog();
+		$("#popup").dialog({ modal:true, width:500 });
 		$("#popup a.button").attr("href", $(this).attr("href"));
 		$("#popup textarea").select();
 	});

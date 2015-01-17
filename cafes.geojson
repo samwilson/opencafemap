@@ -2,44 +2,8 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2015-01-15T08:03:02Z",
+  "timestamp": "2015-01-17T00:03:02Z",
   "features": [
-    {
-      "type": "Feature",
-      "id": "way/44416697",
-      "properties": {
-        "@id": "way/44416697",
-        "amenity": "cafe",
-        "building": "yes"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              115.7642035,
-              -32.1115941
-            ],
-            [
-              115.7643752,
-              -32.1115504
-            ],
-            [
-              115.7643246,
-              -32.111425
-            ],
-            [
-              115.7641615,
-              -32.1114659
-            ],
-            [
-              115.7642035,
-              -32.1115941
-            ]
-          ]
-        ]
-      }
-    },
     {
       "type": "Feature",
       "id": "way/45602887",
@@ -72,44 +36,6 @@
             [
               115.7476288,
               -32.0558191
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "way/48785251",
-      "properties": {
-        "@id": "way/48785251",
-        "amenity": "cafe",
-        "building": "yes",
-        "opening_hours": "7:30-?",
-        "source": "nearmap"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              115.8350199,
-              -32.0109334
-            ],
-            [
-              115.8347915,
-              -32.0110418
-            ],
-            [
-              115.8348281,
-              -32.0110974
-            ],
-            [
-              115.8350566,
-              -32.0109892
-            ],
-            [
-              115.8350199,
-              -32.0109334
             ]
           ]
         ]
@@ -235,103 +161,6 @@
     },
     {
       "type": "Feature",
-      "id": "way/56588942",
-      "properties": {
-        "@id": "way/56588942",
-        "amenity": "cafe",
-        "building": "yes"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              115.7719335,
-              -32.0020158
-            ],
-            [
-              115.7719618,
-              -32.0020383
-            ],
-            [
-              115.7720029,
-              -32.0020414
-            ],
-            [
-              115.7720303,
-              -32.0020158
-            ],
-            [
-              115.7720285,
-              -32.0019849
-            ],
-            [
-              115.772002,
-              -32.0019647
-            ],
-            [
-              115.7719618,
-              -32.0019647
-            ],
-            [
-              115.7719381,
-              -32.0019856
-            ],
-            [
-              115.7719335,
-              -32.0020158
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "way/56652394",
-      "properties": {
-        "@id": "way/56652394",
-        "amenity": "cafe",
-        "building": "yes",
-        "fee": "no"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              115.7625724,
-              -32.0291311
-            ],
-            [
-              115.7625263,
-              -32.0290702
-            ],
-            [
-              115.7624966,
-              -32.0290308
-            ],
-            [
-              115.7622949,
-              -32.0291404
-            ],
-            [
-              115.762384,
-              -32.0292583
-            ],
-            [
-              115.7625857,
-              -32.0291487
-            ],
-            [
-              115.7625724,
-              -32.0291311
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "way/57929262",
       "properties": {
         "@id": "way/57929262",
@@ -426,19 +255,19 @@
           [
             [
               115.7515805,
-              -32.0594735
+              -32.0594783
             ],
             [
               115.7515673,
               -32.0595107
             ],
             [
-              115.7518028,
-              -32.0596098
+              115.7518042,
+              -32.0596105
             ],
             [
-              115.7518745,
-              -32.0594747
+              115.7518768,
+              -32.0594768
             ],
             [
               115.7518233,
@@ -454,7 +283,7 @@
             ],
             [
               115.7515805,
-              -32.0594735
+              -32.0594783
             ]
           ]
         ]
@@ -623,20 +452,73 @@
     },
     {
       "type": "Feature",
-      "id": "node/310200645",
+      "id": "way/322574871",
       "properties": {
-        "@id": "node/310200645",
+        "@id": "way/322574871",
         "amenity": "cafe",
-        "name": "Walter's River Cafe",
-        "opening_hours": "08:00-17:00",
-        "payment:credit_cards": "no",
-        "website": "http://www.waltersrivercafe.com.au/"
+        "building": "yes"
       },
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          115.7876661,
-          -32.0122699
+          [
+            [
+              115.7521657,
+              -32.059951
+            ],
+            [
+              115.7521114,
+              -32.0600437
+            ],
+            [
+              115.7522592,
+              -32.0601075
+            ],
+            [
+              115.7523144,
+              -32.0600141
+            ],
+            [
+              115.7521657,
+              -32.059951
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/322574892",
+      "properties": {
+        "@id": "way/322574892",
+        "amenity": "cafe",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7520582,
+              -32.0597027
+            ],
+            [
+              115.7521646,
+              -32.0597433
+            ],
+            [
+              115.7522434,
+              -32.0595953
+            ],
+            [
+              115.7521371,
+              -32.0595546
+            ],
+            [
+              115.7520582,
+              -32.0597027
+            ]
+          ]
         ]
       }
     },
@@ -668,21 +550,6 @@
         "coordinates": [
           115.7526769,
           -32.0676368
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/567352850",
-      "properties": {
-        "@id": "node/567352850",
-        "amenity": "cafe"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.7522413,
-          -32.0597768
         ]
       }
     },
@@ -766,22 +633,6 @@
     },
     {
       "type": "Feature",
-      "id": "node/728274164",
-      "properties": {
-        "@id": "node/728274164",
-        "amenity": "cafe",
-        "name": "Coogee Beach"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.7638621,
-          -32.1112865
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "node/922234695",
       "properties": {
         "@id": "node/922234695",
@@ -794,22 +645,6 @@
         "coordinates": [
           115.756175,
           -32.0740444
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/922253855",
-      "properties": {
-        "@id": "node/922253855",
-        "amenity": "cafe",
-        "name": "Douro Cafe"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.7585269,
-          -32.0738809
         ]
       }
     },
@@ -965,17 +800,17 @@
     },
     {
       "type": "Feature",
-      "id": "node/2583205944",
+      "id": "node/2774072502",
       "properties": {
-        "@id": "node/2583205944",
+        "@id": "node/2774072502",
         "amenity": "cafe",
-        "name": "Zephyr"
+        "name": "B Shed Cafe & Grill"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          115.7624065,
-          -32.0291395
+          115.7417993,
+          -32.0531903
         ]
       }
     },
@@ -991,41 +826,6 @@
         "coordinates": [
           115.7683402,
           -32.0492536
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/2891142277",
-      "properties": {
-        "@id": "node/2891142277",
-        "amenity": "cafe",
-        "contact:website": "http://www.domecoffees.com.au/find-a-cafe-wa-applecross.html",
-        "name": "Dôme",
-        "opening_hours": "Mo-Tu ,Su 7:00-19:00; We-Sa 7:00-20:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.8350287,
-          -32.0212855
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "node/3136043900",
-      "properties": {
-        "@id": "node/3136043900",
-        "amenity": "cafe",
-        "cuisine": "Cafe_food",
-        "name": "Uber Cafe"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.7948993,
-          -32.0276943
         ]
       }
     },
@@ -1074,6 +874,61 @@
         "coordinates": [
           115.7663492,
           -32.0531934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3291495510",
+      "properties": {
+        "@id": "node/3291495510",
+        "addr:housenumber": "1",
+        "addr:street": "Simms Road",
+        "addr:unit": "14",
+        "amenity": "cafe",
+        "name": "Cuppa Shack",
+        "phone": "08 9337 5384"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7812819,
+          -32.0749314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3293471462",
+      "properties": {
+        "@id": "node/3293471462",
+        "amenity": "cafe",
+        "name": "Blinco Street Cafe",
+        "opening_hours": "Tu-Fr 07:00-15:00; Sa-Su 08:00-15:00",
+        "website": "http://www.fremantlefibonaccicentre.com.au/?page_id=34"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7629137,
+          -32.0519989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3293471463",
+      "properties": {
+        "@id": "node/3293471463",
+        "amenity": "cafe",
+        "name": "The Pickled Fig",
+        "phone": "08 9431 7333"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7523036,
+          -32.0782489
         ]
       }
     }
