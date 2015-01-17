@@ -2,8 +2,44 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2015-01-17T00:03:02Z",
+  "timestamp": "2015-01-17T01:05:02Z",
   "features": [
+    {
+      "type": "Feature",
+      "id": "way/44416697",
+      "properties": {
+        "@id": "way/44416697",
+        "amenity": "cafe",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7642035,
+              -32.1115941
+            ],
+            [
+              115.7643752,
+              -32.1115504
+            ],
+            [
+              115.7643246,
+              -32.111425
+            ],
+            [
+              115.7641615,
+              -32.1114659
+            ],
+            [
+              115.7642035,
+              -32.1115941
+            ]
+          ]
+        ]
+      }
+    },
     {
       "type": "Feature",
       "id": "way/45602887",
@@ -36,6 +72,44 @@
             [
               115.7476288,
               -32.0558191
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/48785251",
+      "properties": {
+        "@id": "way/48785251",
+        "amenity": "cafe",
+        "building": "yes",
+        "opening_hours": "7:30-?",
+        "source": "nearmap"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.8350199,
+              -32.0109334
+            ],
+            [
+              115.8347915,
+              -32.0110418
+            ],
+            [
+              115.8348281,
+              -32.0110974
+            ],
+            [
+              115.8350566,
+              -32.0109892
+            ],
+            [
+              115.8350199,
+              -32.0109334
             ]
           ]
         ]
@@ -154,6 +228,51 @@
             [
               115.7479222,
               -32.0554371
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/56652394",
+      "properties": {
+        "@id": "way/56652394",
+        "amenity": "cafe",
+        "building": "yes",
+        "fee": "no"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7625724,
+              -32.0291311
+            ],
+            [
+              115.7625263,
+              -32.0290702
+            ],
+            [
+              115.7624966,
+              -32.0290308
+            ],
+            [
+              115.7622949,
+              -32.0291404
+            ],
+            [
+              115.762384,
+              -32.0292583
+            ],
+            [
+              115.7625857,
+              -32.0291487
+            ],
+            [
+              115.7625724,
+              -32.0291311
             ]
           ]
         ]
@@ -524,6 +643,25 @@
     },
     {
       "type": "Feature",
+      "id": "node/310200645",
+      "properties": {
+        "@id": "node/310200645",
+        "amenity": "cafe",
+        "name": "Walter's River Cafe",
+        "opening_hours": "08:00-17:00",
+        "payment:credit_cards": "no",
+        "website": "http://www.waltersrivercafe.com.au/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7876661,
+          -32.0122699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/342658341",
       "properties": {
         "@id": "node/342658341",
@@ -628,6 +766,22 @@
         "coordinates": [
           115.7470977,
           -32.0556142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/728274164",
+      "properties": {
+        "@id": "node/728274164",
+        "amenity": "cafe",
+        "name": "Coogee Beach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7638621,
+          -32.1112865
         ]
       }
     },
@@ -800,6 +954,22 @@
     },
     {
       "type": "Feature",
+      "id": "node/2583205944",
+      "properties": {
+        "@id": "node/2583205944",
+        "amenity": "cafe",
+        "name": "Zephyr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7624065,
+          -32.0291395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "node/2774072502",
       "properties": {
         "@id": "node/2774072502",
@@ -826,6 +996,41 @@
         "coordinates": [
           115.7683402,
           -32.0492536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2891142277",
+      "properties": {
+        "@id": "node/2891142277",
+        "amenity": "cafe",
+        "contact:website": "http://www.domecoffees.com.au/find-a-cafe-wa-applecross.html",
+        "name": "Dôme",
+        "opening_hours": "Mo-Tu ,Su 7:00-19:00; We-Sa 7:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8350287,
+          -32.0212855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3136043900",
+      "properties": {
+        "@id": "node/3136043900",
+        "amenity": "cafe",
+        "cuisine": "Cafe_food",
+        "name": "Uber Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7948993,
+          -32.0276943
         ]
       }
     },
@@ -929,6 +1134,30 @@
         "coordinates": [
           115.7523036,
           -32.0782489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3293501469",
+      "properties": {
+        "@id": "node/3293501469",
+        "addr:housenumber": "11",
+        "addr:street": "William Street",
+        "amenity": "cafe",
+        "cuisine": "italian",
+        "name": "Parlapa",
+        "opening_hours": "Mo-Fr 7:30-17:00; sa 08:00-17:00; su 08:00-14:00",
+        "phone": "0439 294 147",
+        "smoking": "no",
+        "website": "http://www.parlapa.com.au/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7476749,
+          -32.054466
         ]
       }
     }

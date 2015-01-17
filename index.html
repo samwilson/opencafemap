@@ -138,15 +138,17 @@ Wheelchair accessibility: yes/no</textarea>
 					try {
 						var oh = new opening_hours(tags['opening_hours']);
 						hours += 'Opening hours: '+tags['opening_hours'];
-						hours += ' (currently '+(oh.getState() ? 'open' : 'closed')+')';
+						hours += ' (<strong>currently '+(oh.getState() ? 'open' : 'closed')+'</strong>)';
 					} catch (ex) {
 						console.error("Error at "+center+" -- "+ex+" -- "+tags['opening_hours']);
 					}
 				}
+				if (hours != '') hours = '<br />'+hours;
 
 				// Address.
 				var addr = '';
 				if (tags['addr:unit']) addr += 'Unit '+tags['addr:unit'];
+				if (tags['addr:unit'] && tags['addr:housenumber']) addr += ', ';
 				if (tags['addr:housenumber']) addr += ' '+tags['addr:housenumber'];
 				if (tags['addr:street']) addr += ' '+tags['addr:street'];
 				if (addr != '') addr = '<br />'+addr;
@@ -156,7 +158,7 @@ Wheelchair accessibility: yes/no</textarea>
 
 				// Put it all together in the popup, and add it to the list.
 				map.get
-				marker.bindPopup("<strong>"+name+"</strong>" + phone + hours + addr
+				marker.bindPopup("<strong>"+name+"</strong>" + addr + phone + hours
 					+ "<br /><em><a class='note'"
 					+ "  href='http://www.openstreetmap.org/note/new#map=19/"+center.lat+"/"+center.lng+"&layers=N'>"
 					+ "Add a note about this caf&eacute;"
