@@ -12,7 +12,7 @@
 	p, ol { line-height:1.2em }
 	a { color:#007095!important }
 	#map { height:100%; width:100% }
-	#box { position:fixed; bottom:1em; left:1em; background-color:white; width:25%; border:2px solid #d85916;
+	#box { position:fixed; bottom:1em; left:1em; background-color:white; width:30em; border:2px solid #d85916;
 		padding:3px }
 	#box img { float:right }
 	h1, h2 { margin:0 0 0.2em 0; padding:0; line-height:1em }
@@ -58,13 +58,7 @@
 	
 	<div id="popup" title="Add a note to OSM">
 		<ol>
-			<li>Copy the text below.</li>
-			<li>Click 'Continue'.</li>
-			<li>A new page will open; paste the text into the 'New Note' form.</li>
-			<li>Fill in the missing information.</li>
-			<li>Click 'Add Note'.</li>
-		</ol>
-		<textarea rows="9">Name: 
+			<li>Copy this text:<pre>Name: 
 Street address: 
 Opening hours: 
 Phone number: 
@@ -72,7 +66,12 @@ Website:
 Email address: 
 Brand (if part of a chain): 
 Wifi availablility: yes/no
-Wheelchair accessibility: yes/no</textarea>
+Wheelchair accessibility: yes/no</pre></li>
+			<li>Click 'Continue'.</li>
+			<li>A new page will open; paste the text into the 'New Note' form.</li>
+			<li>Fill in the missing information.</li>
+			<li>Click 'Add Note'.</li>
+		</ol>
 		<p><a href="" class="button" target="_blank">Continue</a></p>
 	</div>
 
@@ -183,9 +182,6 @@ Wheelchair accessibility: yes/no</textarea>
 		$("#popup textarea").select();
 	});
 	$("#popup").hide();
-	$("#popup textarea").on("click", function(){
-		$(this).select();
-	});
 
 	</script>
  </body>

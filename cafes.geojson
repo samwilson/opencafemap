@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2015-01-17T01:05:02Z",
+  "timestamp": "2015-02-07T00:03:02Z",
   "features": [
     {
       "type": "Feature",
@@ -72,44 +72,6 @@
             [
               115.7476288,
               -32.0558191
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "way/48785251",
-      "properties": {
-        "@id": "way/48785251",
-        "amenity": "cafe",
-        "building": "yes",
-        "opening_hours": "7:30-?",
-        "source": "nearmap"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              115.8350199,
-              -32.0109334
-            ],
-            [
-              115.8347915,
-              -32.0110418
-            ],
-            [
-              115.8348281,
-              -32.0110974
-            ],
-            [
-              115.8350566,
-              -32.0109892
-            ],
-            [
-              115.8350199,
-              -32.0109334
             ]
           ]
         ]
@@ -228,6 +190,58 @@
             [
               115.7479222,
               -32.0554371
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/56588942",
+      "properties": {
+        "@id": "way/56588942",
+        "amenity": "cafe",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              115.7719335,
+              -32.0020158
+            ],
+            [
+              115.7719618,
+              -32.0020383
+            ],
+            [
+              115.7720029,
+              -32.0020414
+            ],
+            [
+              115.7720303,
+              -32.0020158
+            ],
+            [
+              115.7720285,
+              -32.0019849
+            ],
+            [
+              115.772002,
+              -32.0019647
+            ],
+            [
+              115.7719618,
+              -32.0019647
+            ],
+            [
+              115.7719381,
+              -32.0019856
+            ],
+            [
+              115.7719335,
+              -32.0020158
             ]
           ]
         ]
@@ -842,13 +856,15 @@
       "id": "node/1112796032",
       "properties": {
         "@id": "node/1112796032",
-        "amenity": "cafe"
+        "amenity": "cafe",
+        "smoking": "no",
+        "wheelchair": "yes"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          115.7541981,
-          -32.0476404
+          115.7541967,
+          -32.0477055
         ]
       }
     },
@@ -1001,24 +1017,6 @@
     },
     {
       "type": "Feature",
-      "id": "node/2891142277",
-      "properties": {
-        "@id": "node/2891142277",
-        "amenity": "cafe",
-        "contact:website": "http://www.domecoffees.com.au/find-a-cafe-wa-applecross.html",
-        "name": "Dôme",
-        "opening_hours": "Mo-Tu ,Su 7:00-19:00; We-Sa 7:00-20:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.8350287,
-          -32.0212855
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "node/3136043900",
       "properties": {
         "@id": "node/3136043900",
@@ -1092,6 +1090,7 @@
         "addr:unit": "14",
         "amenity": "cafe",
         "name": "Cuppa Shack",
+        "opening_hours": "Mo-Sa 06:30-15:30",
         "phone": "08 9337 5384"
       },
       "geometry": {
@@ -1158,6 +1157,55 @@
         "coordinates": [
           115.7476749,
           -32.054466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3311649833",
+      "properties": {
+        "@id": "node/3311649833",
+        "amenity": "cafe",
+        "name": "Dome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7607486,
+          -32.1006692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3311654502",
+      "properties": {
+        "@id": "node/3311654502",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7633083,
+          -32.1173572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3329420423",
+      "properties": {
+        "@id": "node/3329420423",
+        "amenity": "cafe",
+        "internet_access": "no",
+        "name": "Leisure Cafe",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.7523675,
+          -32.048044
         ]
       }
     }
